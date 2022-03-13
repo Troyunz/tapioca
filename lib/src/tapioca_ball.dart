@@ -14,7 +14,8 @@ abstract class TapiocaBall {
   }
 
   /// Creates a object to overlay text.
-  static TapiocaBall textOverlay(String text, int x, int y, int size, Color color) {
+  static TapiocaBall textOverlay(
+      String text, double x, double y, double size, Color color) {
     return _TextOverlay(text, x, y, size, color);
   }
 
@@ -66,9 +67,9 @@ class _Filter extends TapiocaBall {
 
 class _TextOverlay extends TapiocaBall {
   final String text;
-  final int x;
-  final int y;
-  final int size;
+  final double x;
+  final double y;
+  final double size;
   final Color color;
   _TextOverlay(this.text, this.x, this.y, this.size, this.color);
 
